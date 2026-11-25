@@ -240,8 +240,8 @@ export function construirEstaciones(ctx) {
     const tarj = tarjeta("uru-tarjeta", 60, 920, 960, 480, `
       ${txt(40, 78, "Riesgo de desastre", { tam: 50, peso: 800 })}
       ${txt(40, 132, "20 países · INFORM", { tam: 46, peso: 700, color: C.gris })}
-      ${r.svg}
-      ${txt(r.fin + 10, 188, "/10", { tam: 60, peso: 800, color: C.gris })}
+      <g id="uru-contador" opacity="0">${r.svg}
+      ${txt(r.fin + 10, 188, "/10", { tam: 60, peso: 800, color: C.gris })}</g>
       <g id="uru-barras">${barras}</g>
       <line x1="${x0}" y1="${base + 2}" x2="${x0 + ancho}" y2="${base + 2}" stroke="#cfd5dd" stroke-width="4"/>
       ${txt(x0, base + 58, "Haití", { tam: 46, peso: 800, color: C.malo })}
@@ -266,7 +266,9 @@ export function construirEstaciones(ctx) {
     aparece("#uru-tarjeta", t.pero2, { y: 80, scale: 0.85 });
     orden.forEach((_, i) => tw(`#uru-b${i}`, { scaleY: 0, transformOrigin: "50% 100%" }, { scaleY: 1, transformOrigin: "50% 100%", duration: 0.3, ease: "power3.out" }, t.riesgo2 + (i * (t.bajo - 0.4 - t.riesgo2)) / orden.length));
     tw(`#uru-b${orden.length - 1}`, { scale: 1, transformOrigin: "50% 100%" }, { scale: 1.25, transformOrigin: "50% 100%", duration: 0.18, yoyo: true, repeat: 1 }, t.bajo);
-    r.gira(t.dos2 - 0.3, 0.42);
+    // El «2,5» entra justo cuando la voz dice «dos» y gira hasta su valor antes de «cinco».
+    aparece("#uru-contador", t.dos2 - 0.02, { scale: 0.6 });
+    r.gira(t.dos2, 0.4);
     pliega("#uru-tarjeta", sal.uru);
     pliega("#uru-nombre", sal.uru, "0% 50%");
     tw("#uru-corona", { opacity: 1, scale: 1, transformOrigin: "50% 100%" }, { opacity: 0, scale: 0.3, transformOrigin: "50% 100%", duration: 0.3, ease: "power3.in" }, sal.uru);
