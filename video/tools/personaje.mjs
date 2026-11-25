@@ -93,6 +93,7 @@ const POSES = {
   mira:    { mL: 3, eL: 4, mR: -3, eR: 4, bL: 10, aL: 14, bR: -8, aR: 12, cab: -16, incl: -4, agach: 0, ojoY: -5, boca: "n" },
   rasca:   { mL: 3, eL: 4, mR: -3, eR: 4, bL: 10, aL: 14, bR: 168, aR: 100, cab: -10, incl: -2, agach: 0, ojoY: -5, boca: "n" },
   senala:  { mL: 6, eL: 4, mR: -6, eR: 4, bL: 10, aL: 14, bR: 112, aR: 4, cab: -10, incl: -2, agach: 0, ojoY: -4, boca: "s" },
+  senalaCaja: { mL: 6, eL: 4, mR: -6, eR: 4, bL: 10, aL: 14, bR: 34, aR: 2, cab: 14, incl: 4, agach: 0, ojoY: 4, boca: "s" },
   senalaAbajo: { mL: 6, eL: 4, mR: -6, eR: 4, bL: 10, aL: 14, bR: 62, aR: 2, cab: 8, incl: 3, agach: 0, ojoY: 3, boca: "s" },
   saluda:  { mL: 3, eL: 4, mR: -3, eR: 4, bL: 8, aL: 12, bR: 150, aR: 30, cab: -4, incl: 0, agach: 0, ojoY: 0, boca: "s" },
   pulgar:  { mL: 3, eL: 4, mR: -3, eR: 4, bL: 8, aL: 12, bR: 60, aR: 100, cab: -4, incl: 0, agach: 0, ojoY: 0, boca: "s" },
