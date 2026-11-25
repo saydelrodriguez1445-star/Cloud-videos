@@ -1,0 +1,80 @@
+{
+ "click-soft.mp3": {
+  "pico": 0.073,
+  "inicio": 0.047,
+  "fin": 0.188,
+  "duracion": 0.366
+ },
+ "click.mp3": {
+  "pico": 0.073,
+  "inicio": 0.047,
+  "fin": 0.188,
+  "duracion": 0.366
+ },
+ "impact-bass-1.mp3": {
+  "pico": 0.073,
+  "inicio": 0.049,
+  "fin": 2.07,
+  "duracion": 2.116
+ },
+ "impact-bass-2.mp3": {
+  "pico": 1.986,
+  "inicio": 0.022,
+  "fin": 2.584,
+  "duracion": 2.592
+ },
+ "key-press.mp3": {
+  "pico": 0.076,
+  "inicio": 0.073,
+  "fin": 0.165,
+  "duracion": 0.432
+ },
+ "notification.mp3": {
+  "pico": 0.229,
+  "inicio": 0.085,
+  "fin": 1.453,
+  "duracion": 2.456
+ },
+ "ping.mp3": {
+  "pico": 0.324,
+  "inicio": 0.321,
+  "fin": 1.027,
+  "duracion": 1.32
+ },
+ "pop.mp3": {
+  "pico": 0.12,
+  "inicio": 0.116,
+  "fin": 0.262,
+  "duracion": 0.72
+ },
+ "riser.mp3": {
+  "pico": 3.472,
+  "inicio": 2.088,
+  "fin": 4.296,
+  "duracion": 10.032
+ },
+ "typing.mp3": {
+  "pico": 0.457,
+  "inicio": 0.454,
+  "fin": 1.495,
+  "duracion": 1.541
+ },
+ "whoosh-cinematic.mp3": {
+  "pico": 2.503,
+  "inicio": 2.19,
+  "fin": 4.344,
+  "duracion": 5.544
+ },
+ "whoosh-short.mp3": {
+  "pico": 0.162,
+  "inicio": 0.123,
+  "fin": 0.367,
+  "duracion": 0.575
+ },
+ "whoosh.mp3": {
+  "pico": 0.162,
+  "inicio": 0.123,
+  "fin": 0.367,
+  "duracion": 0.575
+ }
+}

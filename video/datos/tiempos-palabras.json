@@ -1,0 +1,950 @@
+[
+ {
+  "texto": "Una",
+  "inicio": 0,
+  "fin": 0.1,
+  "frase": 0
+ },
+ {
+  "texto": "inundación",
+  "inicio": 0.1,
+  "fin": 0.8,
+  "frase": 0
+ },
+ {
+  "texto": "brutal",
+  "inicio": 0.8,
+  "fin": 1.16,
+  "frase": 0
+ },
+ {
+  "texto": "golpea",
+  "inicio": 1.16,
+  "fin": 1.4,
+  "frase": 0
+ },
+ {
+  "texto": "Latinoamérica.",
+  "inicio": 1.62,
+  "fin": 2.319,
+  "frase": 0
+ },
+ {
+  "texto": "¿Qué",
+  "inicio": 2.66,
+  "fin": 2.82,
+  "frase": 1
+ },
+ {
+  "texto": "país",
+  "inicio": 2.82,
+  "fin": 2.98,
+  "frase": 1
+ },
+ {
+  "texto": "la",
+  "inicio": 2.98,
+  "fin": 3.06,
+  "frase": 1
+ },
+ {
+  "texto": "aguanta",
+  "inicio": 3.06,
+  "fin": 3.44,
+  "frase": 1
+ },
+ {
+  "texto": "mejor?",
+  "inicio": 3.44,
+  "fin": 3.748,
+  "frase": 1
+ },
+ {
+  "texto": "Lo",
+  "inicio": 4.02,
+  "fin": 4.1,
+  "frase": 2
+ },
+ {
+  "texto": "medimos",
+  "inicio": 4.1,
+  "fin": 4.46,
+  "frase": 2
+ },
+ {
+  "texto": "con",
+  "inicio": 4.46,
+  "fin": 4.58,
+  "frase": 2
+ },
+ {
+  "texto": "el",
+  "inicio": 4.58,
+  "fin": 4.74,
+  "frase": 2
+ },
+ {
+  "texto": "índice",
+  "inicio": 4.74,
+  "fin": 5.14,
+  "frase": 2
+ },
+ {
+  "texto": "Inform",
+  "inicio": 5.14,
+  "fin": 5.52,
+  "frase": 2
+ },
+ {
+  "texto": "2026",
+  "inicio": 5.52,
+  "fin": 6.38,
+  "frase": 2
+ },
+ {
+  "texto": "de",
+  "inicio": 6.38,
+  "fin": 6.43,
+  "frase": 2
+ },
+ {
+  "texto": "la",
+  "inicio": 6.45,
+  "fin": 6.56,
+  "frase": 2
+ },
+ {
+  "texto": "Comisión",
+  "inicio": 6.56,
+  "fin": 7.02,
+  "frase": 2
+ },
+ {
+  "texto": "Europea.",
+  "inicio": 7.02,
+  "fin": 7.523,
+  "frase": 2
+ },
+ {
+  "texto": "Tres",
+  "inicio": 7.874,
+  "fin": 8.16,
+  "frase": 3
+ },
+ {
+  "texto": "datos:",
+  "inicio": 8.16,
+  "fin": 8.5,
+  "frase": 3
+ },
+ {
+  "texto": "cuánta",
+  "inicio": 8.5,
+  "fin": 8.82,
+  "frase": 3
+ },
+ {
+  "texto": "agua",
+  "inicio": 8.82,
+  "fin": 8.96,
+  "frase": 3
+ },
+ {
+  "texto": "te",
+  "inicio": 8.96,
+  "fin": 9.16,
+  "frase": 3
+ },
+ {
+  "texto": "cae,",
+  "inicio": 9.16,
+  "fin": 9.38,
+  "frase": 3
+ },
+ {
+  "texto": "lo",
+  "inicio": 9.38,
+  "fin": 9.52,
+  "frase": 3
+ },
+ {
+  "texto": "frágil",
+  "inicio": 9.52,
+  "fin": 9.86,
+  "frase": 3
+ },
+ {
+  "texto": "que",
+  "inicio": 9.86,
+  "fin": 9.98,
+  "frase": 3
+ },
+ {
+  "texto": "es",
+  "inicio": 9.98,
+  "fin": 10.08,
+  "frase": 3
+ },
+ {
+  "texto": "la",
+  "inicio": 10.08,
+  "fin": 10.36,
+  "frase": 3
+ },
+ {
+  "texto": "gente",
+  "inicio": 10.36,
+  "fin": 10.5,
+  "frase": 3
+ },
+ {
+  "texto": "y",
+  "inicio": 10.5,
+  "fin": 10.68,
+  "frase": 3
+ },
+ {
+  "texto": "cómo",
+  "inicio": 10.68,
+  "fin": 11.02,
+  "frase": 3
+ },
+ {
+  "texto": "responde",
+  "inicio": 11.02,
+  "fin": 11.28,
+  "frase": 3
+ },
+ {
+  "texto": "el",
+  "inicio": 11.28,
+  "fin": 11.52,
+  "frase": 3
+ },
+ {
+  "texto": "país.",
+  "inicio": 11.52,
+  "fin": 11.835,
+  "frase": 3
+ },
+ {
+  "texto": "Número",
+  "inicio": 12.171,
+  "fin": 12.58,
+  "frase": 4
+ },
+ {
+  "texto": "cuatro:",
+  "inicio": 12.58,
+  "fin": 12.96,
+  "frase": 4
+ },
+ {
+  "texto": "Cuba.",
+  "inicio": 12.96,
+  "fin": 13.253,
+  "frase": 4
+ },
+ {
+  "texto": "El",
+  "inicio": 13.46,
+  "fin": 13.62,
+  "frase": 5
+ },
+ {
+  "texto": "riesgo",
+  "inicio": 13.62,
+  "fin": 13.86,
+  "frase": 5
+ },
+ {
+  "texto": "de",
+  "inicio": 13.86,
+  "fin": 13.96,
+  "frase": 5
+ },
+ {
+  "texto": "sus",
+  "inicio": 13.96,
+  "fin": 14.16,
+  "frase": 5
+ },
+ {
+  "texto": "ríos",
+  "inicio": 14.16,
+  "fin": 14.4,
+  "frase": 5
+ },
+ {
+  "texto": "es",
+  "inicio": 14.4,
+  "fin": 14.68,
+  "frase": 5
+ },
+ {
+  "texto": "mínimo:",
+  "inicio": 14.68,
+  "fin": 15.04,
+  "frase": 5
+ },
+ {
+  "texto": "medio",
+  "inicio": 15.04,
+  "fin": 15.3,
+  "frase": 5
+ },
+ {
+  "texto": "punto",
+  "inicio": 15.3,
+  "fin": 15.62,
+  "frase": 5
+ },
+ {
+  "texto": "sobre",
+  "inicio": 15.62,
+  "fin": 15.86,
+  "frase": 5
+ },
+ {
+  "texto": "diez.",
+  "inicio": 15.86,
+  "fin": 16.236,
+  "frase": 5
+ },
+ {
+  "texto": "Su",
+  "inicio": 16.389,
+  "fin": 16.52,
+  "frase": 6
+ },
+ {
+  "texto": "amenaza",
+  "inicio": 16.52,
+  "fin": 16.88,
+  "frase": 6
+ },
+ {
+  "texto": "es",
+  "inicio": 16.88,
+  "fin": 17.02,
+  "frase": 6
+ },
+ {
+  "texto": "el",
+  "inicio": 17.02,
+  "fin": 17.16,
+  "frase": 6
+ },
+ {
+  "texto": "mar.",
+  "inicio": 17.16,
+  "fin": 17.4,
+  "frase": 6
+ },
+ {
+  "texto": "Número",
+  "inicio": 17.587,
+  "fin": 17.98,
+  "frase": 7
+ },
+ {
+  "texto": "tres:",
+  "inicio": 17.98,
+  "fin": 18.44,
+  "frase": 7
+ },
+ {
+  "texto": "Costa",
+  "inicio": 18.44,
+  "fin": 18.72,
+  "frase": 7
+ },
+ {
+  "texto": "Rica.",
+  "inicio": 18.72,
+  "fin": 19.088,
+  "frase": 7
+ },
+ {
+  "texto": "Es",
+  "inicio": 19.537,
+  "fin": 19.62,
+  "frase": 8
+ },
+ {
+  "texto": "el",
+  "inicio": 19.62,
+  "fin": 19.86,
+  "frase": 8
+ },
+ {
+  "texto": "país",
+  "inicio": 19.86,
+  "fin": 20.06,
+  "frase": 8
+ },
+ {
+  "texto": "que",
+  "inicio": 20.06,
+  "fin": 20.3,
+  "frase": 8
+ },
+ {
+  "texto": "mejor",
+  "inicio": 20.3,
+  "fin": 20.7,
+  "frase": 8
+ },
+ {
+  "texto": "responde",
+  "inicio": 20.7,
+  "fin": 20.94,
+  "frase": 8
+ },
+ {
+  "texto": "a",
+  "inicio": 20.94,
+  "fin": 21.08,
+  "frase": 8
+ },
+ {
+  "texto": "una",
+  "inicio": 21.08,
+  "fin": 21.3,
+  "frase": 8
+ },
+ {
+  "texto": "emergencia",
+  "inicio": 21.3,
+  "fin": 21.78,
+  "frase": 8
+ },
+ {
+  "texto": "en",
+  "inicio": 21.78,
+  "fin": 21.96,
+  "frase": 8
+ },
+ {
+  "texto": "toda",
+  "inicio": 21.96,
+  "fin": 22.14,
+  "frase": 8
+ },
+ {
+  "texto": "la",
+  "inicio": 22.14,
+  "fin": 22.42,
+  "frase": 8
+ },
+ {
+  "texto": "región.",
+  "inicio": 22.42,
+  "fin": 22.7,
+  "frase": 8
+ },
+ {
+  "texto": "Número",
+  "inicio": 23.051,
+  "fin": 23.34,
+  "frase": 9
+ },
+ {
+  "texto": "dos:",
+  "inicio": 23.34,
+  "fin": 23.72,
+  "frase": 9
+ },
+ {
+  "texto": "Chile.",
+  "inicio": 23.72,
+  "fin": 24.058,
+  "frase": 9
+ },
+ {
+  "texto": "Sus",
+  "inicio": 24.264,
+  "fin": 24.4,
+  "frase": 10
+ },
+ {
+  "texto": "ríos",
+  "inicio": 24.4,
+  "fin": 24.66,
+  "frase": 10
+ },
+ {
+  "texto": "bajan",
+  "inicio": 24.66,
+  "fin": 24.92,
+  "frase": 10
+ },
+ {
+  "texto": "de",
+  "inicio": 24.92,
+  "fin": 25,
+  "frase": 10
+ },
+ {
+  "texto": "los",
+  "inicio": 25,
+  "fin": 25.2,
+  "frase": 10
+ },
+ {
+  "texto": "Andes",
+  "inicio": 25.2,
+  "fin": 25.46,
+  "frase": 10
+ },
+ {
+  "texto": "con",
+  "inicio": 25.46,
+  "fin": 25.7,
+  "frase": 10
+ },
+ {
+  "texto": "mucha",
+  "inicio": 25.7,
+  "fin": 26.08,
+  "frase": 10
+ },
+ {
+  "texto": "fuerza.",
+  "inicio": 26.08,
+  "fin": 26.365,
+  "frase": 10
+ },
+ {
+  "texto": "Pero",
+  "inicio": 26.615,
+  "fin": 26.72,
+  "frase": 11
+ },
+ {
+  "texto": "si",
+  "inicio": 26.72,
+  "fin": 26.86,
+  "frase": 11
+ },
+ {
+  "texto": "hay",
+  "inicio": 26.86,
+  "fin": 27.1,
+  "frase": 11
+ },
+ {
+  "texto": "peligro,",
+  "inicio": 27.1,
+  "fin": 27.5,
+  "frase": 11
+ },
+ {
+  "texto": "manda",
+  "inicio": 27.5,
+  "fin": 27.78,
+  "frase": 11
+ },
+ {
+  "texto": "una",
+  "inicio": 27.78,
+  "fin": 28.02,
+  "frase": 11
+ },
+ {
+  "texto": "alerta",
+  "inicio": 28.02,
+  "fin": 28.24,
+  "frase": 11
+ },
+ {
+  "texto": "a",
+  "inicio": 28.24,
+  "fin": 28.46,
+  "frase": 11
+ },
+ {
+  "texto": "todos",
+  "inicio": 28.46,
+  "fin": 28.66,
+  "frase": 11
+ },
+ {
+  "texto": "los",
+  "inicio": 28.66,
+  "fin": 28.86,
+  "frase": 11
+ },
+ {
+  "texto": "móviles",
+  "inicio": 28.86,
+  "fin": 29.18,
+  "frase": 11
+ },
+ {
+  "texto": "de",
+  "inicio": 29.18,
+  "fin": 29.24,
+  "frase": 11
+ },
+ {
+  "texto": "la",
+  "inicio": 29.25,
+  "fin": 29.58,
+  "frase": 11
+ },
+ {
+  "texto": "zona.",
+  "inicio": 29.58,
+  "fin": 29.772,
+  "frase": 11
+ },
+ {
+  "texto": "Y",
+  "inicio": 30.137,
+  "fin": 30.207,
+  "frase": 12
+ },
+ {
+  "texto": "el",
+  "inicio": 30.207,
+  "fin": 30.36,
+  "frase": 12
+ },
+ {
+  "texto": "número",
+  "inicio": 30.36,
+  "fin": 30.7,
+  "frase": 12
+ },
+ {
+  "texto": "uno:",
+  "inicio": 30.7,
+  "fin": 30.92,
+  "frase": 12
+ },
+ {
+  "texto": "Uruguay.",
+  "inicio": 30.92,
+  "fin": 31.56,
+  "frase": 12
+ },
+ {
+  "texto": "También",
+  "inicio": 31.56,
+  "fin": 31.8,
+  "frase": 13
+ },
+ {
+  "texto": "se",
+  "inicio": 31.8,
+  "fin": 31.92,
+  "frase": 13
+ },
+ {
+  "texto": "inunda.",
+  "inicio": 31.92,
+  "fin": 32.373,
+  "frase": 13
+ },
+ {
+  "texto": "Pero",
+  "inicio": 32.565,
+  "fin": 32.74,
+  "frase": 14
+ },
+ {
+  "texto": "tiene",
+  "inicio": 32.74,
+  "fin": 32.9,
+  "frase": 14
+ },
+ {
+  "texto": "el",
+  "inicio": 32.9,
+  "fin": 33.06,
+  "frase": 14
+ },
+ {
+  "texto": "riesgo",
+  "inicio": 33.06,
+  "fin": 33.3,
+  "frase": 14
+ },
+ {
+  "texto": "de",
+  "inicio": 33.3,
+  "fin": 33.42,
+  "frase": 14
+ },
+ {
+  "texto": "desastre",
+  "inicio": 33.42,
+  "fin": 33.88,
+  "frase": 14
+ },
+ {
+  "texto": "más",
+  "inicio": 33.88,
+  "fin": 34.12,
+  "frase": 14
+ },
+ {
+  "texto": "bajo",
+  "inicio": 34.12,
+  "fin": 34.24,
+  "frase": 14
+ },
+ {
+  "texto": "de",
+  "inicio": 34.24,
+  "fin": 34.46,
+  "frase": 14
+ },
+ {
+  "texto": "Latinoamérica:",
+  "inicio": 34.46,
+  "fin": 35.14,
+  "frase": 14
+ },
+ {
+  "texto": "dos",
+  "inicio": 35.14,
+  "fin": 35.345,
+  "frase": 14
+ },
+ {
+  "texto": "coma",
+  "inicio": 35.345,
+  "fin": 35.618,
+  "frase": 14
+ },
+ {
+  "texto": "cinco",
+  "inicio": 35.618,
+  "fin": 35.96,
+  "frase": 14
+ },
+ {
+  "texto": "sobre",
+  "inicio": 35.96,
+  "fin": 36.22,
+  "frase": 14
+ },
+ {
+  "texto": "diez.",
+  "inicio": 36.22,
+  "fin": 36.566,
+  "frase": 14
+ },
+ {
+  "texto": "¿Y",
+  "inicio": 36.727,
+  "fin": 36.797,
+  "frase": 15
+ },
+ {
+  "texto": "el",
+  "inicio": 36.797,
+  "fin": 36.867,
+  "frase": 15
+ },
+ {
+  "texto": "que",
+  "inicio": 36.867,
+  "fin": 36.937,
+  "frase": 15
+ },
+ {
+  "texto": "peor",
+  "inicio": 36.937,
+  "fin": 37.14,
+  "frase": 15
+ },
+ {
+  "texto": "lo",
+  "inicio": 37.14,
+  "fin": 37.28,
+  "frase": 15
+ },
+ {
+  "texto": "pasaría?",
+  "inicio": 37.28,
+  "fin": 37.94,
+  "frase": 15
+ },
+ {
+  "texto": "Haití:",
+  "inicio": 37.94,
+  "fin": 38.3,
+  "frase": 16
+ },
+ {
+  "texto": "su",
+  "inicio": 38.3,
+  "fin": 38.56,
+  "frase": 16
+ },
+ {
+  "texto": "vulnerabilidad",
+  "inicio": 38.56,
+  "fin": 39.22,
+  "frase": 16
+ },
+ {
+  "texto": "es",
+  "inicio": 39.22,
+  "fin": 39.32,
+  "frase": 16
+ },
+ {
+  "texto": "de",
+  "inicio": 39.32,
+  "fin": 39.5,
+  "frase": 16
+ },
+ {
+  "texto": "ocho",
+  "inicio": 39.5,
+  "fin": 39.747,
+  "frase": 16
+ },
+ {
+  "texto": "coma",
+  "inicio": 39.747,
+  "fin": 39.993,
+  "frase": 16
+ },
+ {
+  "texto": "tres",
+  "inicio": 39.993,
+  "fin": 40.24,
+  "frase": 16
+ },
+ {
+  "texto": "sobre",
+  "inicio": 40.24,
+  "fin": 40.48,
+  "frase": 16
+ },
+ {
+  "texto": "diez.",
+  "inicio": 40.48,
+  "fin": 40.801,
+  "frase": 16
+ },
+ {
+  "texto": "Es",
+  "inicio": 41.2,
+  "fin": 41.3,
+  "frase": 17
+ },
+ {
+  "texto": "el",
+  "inicio": 41.3,
+  "fin": 41.46,
+  "frase": 17
+ },
+ {
+  "texto": "décimo",
+  "inicio": 41.46,
+  "fin": 41.92,
+  "frase": 17
+ },
+ {
+  "texto": "país",
+  "inicio": 41.92,
+  "fin": 42.16,
+  "frase": 17
+ },
+ {
+  "texto": "con",
+  "inicio": 42.16,
+  "fin": 42.34,
+  "frase": 17
+ },
+ {
+  "texto": "más",
+  "inicio": 42.34,
+  "fin": 42.58,
+  "frase": 17
+ },
+ {
+  "texto": "riesgo",
+  "inicio": 42.58,
+  "fin": 42.86,
+  "frase": 17
+ },
+ {
+  "texto": "del",
+  "inicio": 42.86,
+  "fin": 43.08,
+  "frase": 17
+ },
+ {
+  "texto": "mundo.",
+  "inicio": 43.08,
+  "fin": 43.4,
+  "frase": 17
+ },
+ {
+  "texto": "Comenta",
+  "inicio": 43.845,
+  "fin": 44.16,
+  "frase": 18
+ },
+ {
+  "texto": "tu",
+  "inicio": 44.16,
+  "fin": 44.48,
+  "frase": 18
+ },
+ {
+  "texto": "país",
+  "inicio": 44.48,
+  "fin": 44.66,
+  "frase": 18
+ },
+ {
+  "texto": "y",
+  "inicio": 44.66,
+  "fin": 44.74,
+  "frase": 18
+ },
+ {
+  "texto": "te",
+  "inicio": 44.74,
+  "fin": 45.04,
+  "frase": 18
+ },
+ {
+  "texto": "digo",
+  "inicio": 45.04,
+  "fin": 45.18,
+  "frase": 18
+ },
+ {
+  "texto": "en",
+  "inicio": 45.18,
+  "fin": 45.26,
+  "frase": 18
+ },
+ {
+  "texto": "qué",
+  "inicio": 45.26,
+  "fin": 45.52,
+  "frase": 18
+ },
+ {
+  "texto": "puesto",
+  "inicio": 45.52,
+  "fin": 45.84,
+  "frase": 18
+ },
+ {
+  "texto": "queda.",
+  "inicio": 45.84,
+  "fin": 46.02,
+  "frase": 18
+ }
+]

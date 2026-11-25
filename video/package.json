@@ -1,0 +1,17 @@
+{
+  "name": "inundacion-latam",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generar": "node tools/generar.mjs",
+    "check": "npx --yes hyperframes@0.9.93 check",
+    "render": "npx --yes hyperframes@0.9.93 render"
+  },
+  "devDependencies": {
+    "d3-geo": "3.1.1",
+    "d3-interpolate": "3.0.1",
+    "topojson-client": "3.1.0",
+    "world-atlas": "2.0.2",
+    "lucide-static": "0.468.0"
+  }
+}
