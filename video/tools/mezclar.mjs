@@ -30,14 +30,26 @@ M.efectos.forEach((e, i) => {
 });
 f.push(`${etiquetas.join("")}amix=inputs=${etiquetas.length}:normalize=0:duration=first,atrim=0:${D}[mix]`);
 
-// 2. Primera pasada de loudnorm (medir)
-const grafo1 = f.join(";") + `;[mix]loudnorm=I=${OBJ.I}:TP=${OBJ.TP}:LRA=${OBJ.LRA}:print_format=json[out]`;
-const p1 = spawnSync("ffmpeg", [...args, "-filter_complex", grafo1, "-map", "[out]", "-f", "null", "-"], { encoding: "utf8", maxBuffer: 1e8 });
-const json = p1.stderr.slice(p1.stderr.lastIndexOf("{"), p1.stderr.lastIndexOf("}") + 1);
-const med = JSON.parse(json);
-// 3. Segunda pasada (aplicar, lineal)
-const grafo2 = f.join(";") + `;[mix]loudnorm=I=${OBJ.I}:TP=${OBJ.TP}:LRA=${OBJ.LRA}:measured_I=${med.input_i}:measured_TP=${med.input_tp}:measured_LRA=${med.input_lra}:measured_thresh=${med.input_thresh}:offset=${med.target_offset}:linear=true,aresample=48000[out]`;
-execFileSync("ffmpeg", [...args, "-filter_complex", grafo2, "-map", "[out]", "-c:a", "pcm_s16le", mezcla], { stdio: ["ignore", "ignore", "pipe"] });
+// 2. Sonoridad: se mide la mezcla, se aplica la ganancia que falta hasta −14 LUFS y un limitador de picos a −1,5 dBFS
+//    (pico real ≤ −1 dBTP). Se repite si el resultado se desvía más de 0,2 LU.
+const mide = (archivo) => {
+  const r = spawnSync("ffmpeg", ["-hide_banner", "-nostats", "-i", archivo, "-af", "ebur128=peak=true", "-f", "null", "-"], { encoding: "utf8" }).stderr;
+  return { I: parseFloat(r.match(/I:\s+(-?[\d.]+) LUFS/g).pop().match(/-?[\d.]+/)[0]), TP: parseFloat((r.match(/Peak:\s+(-?[\d.]+) dBFS/g) || ["Peak: 0"]).pop().match(/-?[\d.]+/)[0]) };
+};
+const cruda = path.join(tmp, "cruda.wav");
+execFileSync("ffmpeg", [...args, "-filter_complex", f.join(";"), "-map", "[mix]", "-c:a", "pcm_f32le", cruda], { stdio: ["ignore", "ignore", "pipe"] });
+const med = mide(cruda);
+let ganancia = OBJ.I - med.I, final = null;
+// Se mide ya codificado en AAC (que es lo que se publica): la codificación mueve un poco la sonoridad y los picos.
+const prueba = path.join(tmp, "prueba.m4a");
+for (let intento = 0; intento < 5; intento++) {
+  execFileSync("ffmpeg", ["-hide_banner", "-y", "-i", cruda, "-af", `volume=${ganancia.toFixed(2)}dB,alimiter=limit=0.79:attack=1.5:release=60:level=false,aresample=48000:resampler=soxr:osf=s16`, "-c:a", "pcm_s16le", mezcla], { stdio: ["ignore", "ignore", "pipe"] });
+  execFileSync("ffmpeg", ["-hide_banner", "-y", "-i", mezcla, "-c:a", "aac", "-b:a", "192k", prueba], { stdio: ["ignore", "ignore", "pipe"] });
+  final = mide(prueba);
+  if (Math.abs(final.I - OBJ.I) <= 0.1) break;
+  ganancia += OBJ.I - final.I;
+}
+med.input_i = med.I;
 // 4. Sustituir el audio del vídeo (la imagen se copia tal cual)
 execFileSync("ffmpeg", ["-hide_banner", "-y", "-i", entrada, "-i", mezcla, "-map", "0:v:0", "-map", "1:a:0", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-t", String(D), "-movflags", "+faststart", salida], { stdio: ["ignore", "ignore", "pipe"] });
 // 5. Medida final

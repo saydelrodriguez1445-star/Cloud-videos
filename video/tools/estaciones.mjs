@@ -102,7 +102,7 @@ export function construirEstaciones(ctx) {
     });
     // Camioneta de rescate (formas SVG) con luces que parpadean.
     const camioneta = `
-      <g id="cri-camion" transform="translate(-420,0)">
+      <g id="cri-camion" transform="translate(-420,0)" opacity="0">
         <g transform="translate(0,836)">
           <rect x="0" y="40" width="250" height="110" rx="18" fill="#ffffff" stroke="${C.tinta}" stroke-width="6"/>
           <path d="M250,70 h70 l48,40 v40 h-118z" fill="#ffffff" stroke="${C.tinta}" stroke-width="6" stroke-linejoin="round"/>
@@ -136,7 +136,8 @@ export function construirEstaciones(ctx) {
     llenaBarra(resp.barra, t.emergencia, 0.7);
     aparece("#cri-tag", t.region - 0.05, { scale: 0.7 });
     // La camioneta llega en «emergencia» y frena junto a la vecina.
-    tw("#cri-camion", { x: -420 }, { x: 40, duration: 0.7, ease: "power3.out" }, t.emergencia - 0.15);
+    tw("#cri-camion", { x: -420, opacity: 1 }, { x: 40, opacity: 1, duration: 0.7, ease: "power3.out" }, t.emergencia - 0.15);
+    pliega("#cri-camion", sal.cr, "50% 100%");
     tw("#cri-rueda-a", { rotation: 0, svgOrigin: "70 988" }, { rotation: 540, svgOrigin: "70 988", duration: 0.7, ease: "power3.out" }, t.emergencia - 0.15);
     tw("#cri-rueda-b", { rotation: 0, svgOrigin: "300 988" }, { rotation: 540, svgOrigin: "300 988", duration: 0.7, ease: "power3.out" }, t.emergencia - 0.15);
     const nDest = Math.max(1, Math.floor((sal.cr - t.emergencia) / 0.36));

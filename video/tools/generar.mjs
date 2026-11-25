@@ -727,6 +727,38 @@ ${sfxHTML}
 </html>
 `;
 
+// Tabla de sincronía: cada aparición clave y la palabra que la dispara (todo sale de P()).
+const SINCRONIA = [
+  ["La ola rompe, la cámara tiembla y el agua inunda el mapa", "golpea", t.golpea],
+  ["Caen las chinchetas «?» (Cuba, Costa Rica, Chile, Uruguay)", "país · aguanta · mejor", t.pais1],
+  ["Sube el navegador y se escribe la URL", "Lo medimos", t.lo],
+  ["Carga la página de INFORM", "índice", t.indice],
+  ["Clic en «Descargar» y entran los datos", "2026", t.y2026],
+  ["Aparece «Comisión Europea · JRC»", "Comisión", t.comision],
+  ["Ficha «Agua que te cae»", "agua", t.agua],
+  ["Ficha «Vulnerabilidad»", "frágil", t.fragil],
+  ["Ficha «Respuesta»", "responde", t.responde],
+  ["La chincheta de Cuba pasa de «?» a «4»", "cuatro", t.cuatro],
+  ["Tarjeta «Ríos» de Cuba (0,5)", "ríos", t.rios1],
+  ["El mar sube alrededor de Cuba y tarjeta «Costa» (5,7)", "amenaza · mar", t.amenaza],
+  ["La chincheta de Costa Rica pasa a «3»", "tres", t.tres2],
+  ["Tarjeta «Falta de respuesta» (2,2)", "responde", t.responde2],
+  ["Llega la camioneta de rescate", "emergencia", t.emergencia],
+  ["Etiqueta «La más baja de la región»", "región", t.region],
+  ["La chincheta de Chile pasa a «2»", "dos", t.dos1],
+  ["Se levantan los Andes", "Andes", t.andes],
+  ["El móvil recibe la alerta", "alerta", t.alerta],
+  ["Se encienden los móviles por todo Chile", "todos los móviles", t.todos],
+  ["La chincheta de Uruguay pasa a «1» y cae la corona", "uno · Uruguay", t.uno],
+  ["Uruguay se inunda un poco", "inunda", t.inunda],
+  ["Se dibujan las barras de los 20 países", "riesgo", t.riesgo2],
+  ["Rueda el «2,5» con golpe de cámara y de sonido (clímax)", "dos coma cinco", t.dos2],
+  ["Cae la chincheta roja de Haití", "Haití", t.haiti],
+  ["Sube el agua en Haití y tarjeta «Vulnerabilidad» (8,3)", "vulnerabilidad", t.vulnerabilidad],
+  ["La lista mundial rueda hasta «10 Haití»", "décimo → mundo", t.decimo],
+  ["Aparecen la caja de comentarios y la leyenda", "Comenta", t.comenta],
+];
+fs.writeFileSync(path.join(RAIZ, "datos/sincronia.md"), "# Sincronía (generada por tools/generar.mjs)\n\n| Segundo | Palabra | Qué pasa |\n|---|---|---|\n" + SINCRONIA.map(([q, p, tt]) => `| ${tt.toFixed(2)} | ${p} | ${q} |`).join("\n") + "\n");
 fs.mkdirSync(path.join(RAIZ, "compositions"), { recursive: true });
 fs.writeFileSync(path.join(RAIZ, "compositions/mundo.html"), mundoHTML);
 fs.writeFileSync(path.join(RAIZ, "compositions/subtitulos.html"), subsHTML);

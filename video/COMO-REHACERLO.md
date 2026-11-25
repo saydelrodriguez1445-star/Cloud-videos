@@ -100,8 +100,11 @@ node tools/generar.mjs                       # deja el proyecto otra vez con sub
 
 ```bash
 npx hyperframes check                                                    # 0 errores
-node tools/zonas-seguras.cjs 3002 0.6,3.4,9.5,15.5,22.5,29.3,35.9,42.4,45.8   # con la previsualización en marcha
+node tools/zonas-seguras-check.mjs $(ls -t .hyperframes/artifacts/checks/*.json | head -1)
+#   ↑ filtra el informe de check con las zonas del encargo (220 px arriba, 420 abajo, 60 a los lados)
 ffmpeg -i video-FINAL.mp4 -vf blackdetect=d=0.1:pix_th=0.10 -an -f null -   # sin fotogramas negros
 ffprobe -v error -show_entries format=duration -of csv=p=0 video-FINAL.mp4  # = duración de la voz
 ffmpeg -i video-FINAL.mp4 -af ebur128=peak=true -f null -                   # −14 LUFS
 ```
+
+`datos/sincronia.md` lista cada aparición clave con la palabra que la dispara y su segundo exacto.
